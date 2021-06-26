@@ -28,8 +28,6 @@ public class SpringMemberControllerV3 {
         Member member = new Member(username, age);
         memberRepository.save(member);
 
-        StringBuilder sb = new StringBuilder();
-        sb.toString();
         model.addAttribute("member", member);
         return "save-result";
     }
